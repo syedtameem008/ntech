@@ -1,0 +1,108 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-compatible" content="IE=edge"/>
+<title>NewtechEngineers</title>
+<link rel="icon" href="" type="image/icon">
+<link rel="stylesheet" href="ntech.css">
+<link rel="stylesheet" href="reveal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+<script>
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } 
+  }
+}
+window.addEventListener("scroll", reveal);
+</script>
+</head>
+
+<body>
+<!--loader-->
+<div id="overlay">
+  <div id="progstat"></div>
+  <div id="progress"></div>
+</div>
+<!--loader end-->
+
+<!--heading-->
+<div class="wrapper">
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      <b>NewtechEngineers</b>
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <div class="nav-links">
+    <a href="#call">CONTACT</a>
+    <a href="" target="_blank">EMAIL</a>
+    <a href="" target="_blank">LOCATION</a>
+	</div>
+</div>
+<div class="welcome">
+<div class="text">
+<h1 style="font-size:30px; color: font-weight:bolder;">Welcome to</h1>
+<h1 style="font-size:30px;">Newtech Engineers</h1>
+<h4>The Builders choice</h4>
+<p class="reveal fade-left" style="font-size:15px;">We are the leading professional civil and structural engineering
+consultancy based in the city of Nellore, Andhra Pradesh, South India, offering engineering services globally.</p>
+</div>
+</div>
+</div>
+<!--heading close-->
+
+<!--about-->
+<div class="about-us">
+<h1 style="text-align:center;">About-us</H1>
+<DIV CLASS="container">
+<div class="logo">
+<img class="reveal fade-left" src="./assets/ntlogo.png" width=300px height=300px>
+</div>
+<div class="about">
+<p class="reveal fade-right">NEWTECH ENGINEERS was founded in the year2007 by a senior structural engineer <span style="color:red;">Engr.Mahboob</span> (presently, the Chief Consultant of this firm)
+who has an efficient and remarkable INTERNATIONAL engineering track record in the field of structural engineering in particular and in the field 
+of conceptual planning, valuation and supervision in general.NEWTECH ENGINEERS offers engineering services which are tailored to fit the needs of the
+client so as to meet the available resources of the client leading to safe, efficient and economic project.  It should be noted that NEWTECH ENGINEERS
+also undertakes various engineering design services under OUTSOURCING basis (See Services page).</p>
+</div>
+</div>
+</dIV>
+<!--about us close-->
+
+<!--loader-->
+<script type="text/javascript" src="loader.js"></script>
+<!--loader close-->
+
+<!--service-section-->
+<div class="services">
+<h1 style="text-align:center;">Our-Services</H1>
+<div class="container1">
+<div class="b1 reveal fade-right"><h2><a href="#">Structural Engineering</a></h2></div>
+<div class="b2 reveal fade-left"><h2><a href="#">Architectural  Engineering</a></h2></div>
+<div class="b3 reveal fade-right"><h2><a href="#">Valuation</a></h2></div>
+<div class="b4 reveal fade-left"><h2><a href="#">Estimation</a></h2></div>
+<div class="b5 reveal fade-right"><h2><a href="#">Supervision and Quality Control</a></h2></div>
+<div class="b6 reveal fade-left"><h2><a href="#">Construction Material Testing and Certification</a></h2></div>
+<div class="b7 reveal fade-right"><h2><a href="#">Land Survey</a></h2></div>
+<div class="b8 reveal fade-left"><h2><a href="#">Rehabilitation, Renovation and Retrofitting of existing structures</a></h2></div>
+</div>
+</div>
+</body>
+</html>
